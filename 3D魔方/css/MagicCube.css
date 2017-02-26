@@ -1,0 +1,149 @@
+/*初始化*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.cube {
+    width: 160px;
+    height: 160px;
+    margin: 80px auto 0 auto;
+    -webkit-transform-style: preserve-3d;
+    -webkit-perspective: 300;
+}
+
+
+/*旋转动画*/
+
+#box {
+    -webkit-animation-name: animation;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 3s;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform-origin: 80px 80px 0;
+    -webkit-animation-play-state: running;
+}
+
+@-webkit-keyframes animation {
+    from,
+    to {}
+    16% {
+        -webkit-transform: rotateY(-90deg);
+    }
+    33% {
+        -webkit-transform: rotateY(-90deg) rotateZ(135deg);
+    }
+    50% {
+        -webkit-transform: rotateY(225deg) rotateZ(135deg);
+    }
+    66% {
+        -webkit-transform: rotateY(135deg) rotateX(135deg);
+    }
+    83% {
+        -webkit-transform: rotateX(135deg);
+    }
+}
+
+
+/*魔方每一个面样式*/
+
+#box div {
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    font-size: 130px;
+    border: 3px solid #00FFFF;
+    text-align: center;
+}
+
+
+/*魔方六个大面的搭建*/
+
+#box .one {
+    -webkit-transform: translateZ(80px);
+}
+
+#box .two {
+    -webkit-transform: rotateX(-90deg) translateZ(80px);
+}
+
+#box .three {
+    -webkit-transform: rotateX(90deg) translateZ(80px);
+}
+
+#box .four {
+    -webkit-transform: rotateY(-90deg) translateZ(80px);
+}
+
+#box .five {
+    -webkit-transform: rotateY(90deg) translateZ(80px);
+}
+
+#box .six {
+    -webkit-transform: translateZ(-80px);
+}
+
+
+/*魔方每个面中9个小div样式*/
+
+#box .one .redDiv {
+    position: relative;
+    float: left;
+    width: 51px;
+    height: 51px;
+    border: 1px solid orange;
+    background-color: rgba(255, 0, 0, 0.8);
+    border-radius: 5px;
+}
+
+#box .two .orangeDiv {
+    position: relative;
+    float: left;
+    width: 51px;
+    height: 51px;
+    border: 1px solid orange;
+    background-color: rgb(255, 153, 0, 0.8);
+    border-radius: 5px;
+}
+
+#box .three .yellowDiv {
+    position: relative;
+    float: left;
+    width: 51px;
+    height: 51px;
+    border: 1px solid orange;
+    background-color: rgba(255, 255, 0, 0.8);
+    border-radius: 5px;
+}
+
+#box .four .greenDiv {
+    position: relative;
+    float: left;
+    width: 51px;
+    height: 51px;
+    border: 1px solid orange;
+    background-color: rgba(66, 22, 26, 0.8);
+    border-radius: 5px;
+}
+
+#box .five .blueDiv {
+    position: relative;
+    float: left;
+    width: 51px;
+    height: 51px;
+    border: 1px solid orange;
+    background-color: rgba(0, 153, 255, 0.8);
+    border-radius: 5px;
+}
+
+#box .six .purpleDiv {
+    position: relative;
+    float: left;
+    width: 51px;
+    height: 51px;
+    border: 1px solid orange;
+    background-color: rgba(221, 34, 221, 0.8);
+    border-radius: 5px;
+}
