@@ -1,0 +1,443 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font: 13px arial;
+}
+
+.wrapper {
+    min-width: 768px;
+    position: relative;
+}
+
+
+/*pc端头部*/
+
+.pcHeader {
+    overflow: hidden;
+}
+
+.pcHeader nav {
+    width: 470px;
+    float: right;
+    margin-top: 15px;
+    padding-right: 0;
+}
+
+.pcHeader nav a {
+    margin-left: 15px;
+    color: black;
+    cursor: pointer;
+}
+
+.pcHeader nav a:hover {
+    color: #0000CC;
+}
+
+.pcHeader nav .more:hover {
+    color: #000;
+}
+
+
+/*主体部分*/
+
+.baiduFrame {
+    width: 100%;
+    height: 158px;
+    margin-top: 100px;
+}
+
+.content {
+    width: 100%;
+    text-align: center;
+}
+
+.content input {
+    width: 500px;
+    height: 22px;
+    outline: 0;
+    text-indent: 8px;
+    border: 1px solid #CCCCCC;
+}
+
+.content input:hover {
+    border-color: #999999;
+}
+
+.content input:focus {
+    border-color: #3388FF;
+}
+
+.content button {
+    margin-left: -4px;
+    width: 100px;
+    height: 26px;
+    background-color: #317EF3;
+    border: none;
+    cursor: pointer;
+}
+
+.content button:hover {
+    background-color: #4499FF;
+}
+
+.content .pcBaidu {
+    width: 270px;
+    height: 129px;
+}
+
+.contentFixed {
+    position: fixed;
+    top: -122px;
+    background-color: #fff;
+    border-bottom: 1px solid #bbb;
+}
+
+
+/*tab标签切换部分*/
+
+.tabContent {
+    width: 900px;
+    margin: 0 auto;
+    /*    min-height: 500px;*/
+    border: 1px solid #e9e9e9;
+    margin-top: 50px;
+    box-sizing: border-box;
+}
+
+.tabContent ul.ulTop,
+.tabContent ul.ulTop li {
+    list-style: none;
+}
+
+.tabContent ul.ulTop {
+    height: 40px;
+    border-bottom: 1px solid #e9e9e9;
+}
+
+.tabContent ul.ulTop li {
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: #000;
+    cursor: pointer
+}
+
+.tabContent .tab {
+    display: none;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.tabContent .tab2 {
+    display: block;
+}
+
+.tabhover {
+    background-color: #b3b6bb;
+}
+
+.tabselected {
+    background-color: #9a9da2;
+}
+
+.empDiv {
+    clear: both;
+}
+
+
+/*推荐栏部分*/
+
+.tabContent .tabRecom .recomLeft {
+    width: 540px;
+    /*    background-color:red;*/
+    float: left;
+}
+
+.tabContent .tabRecom .recomRight {
+    /*    background-color:yellow;*/
+    /*    height: 100px;
+*/
+    width: 320px;
+    float: left;
+}
+
+.tabContent .tabRecom .recomLeft .recomInfo {
+    width: 500px;
+    height: 135px;
+}
+
+.tabContent .tabRecom .recomLeft .recomInfo img,
+.tabContent .tabRecom .recomLeft .recomInfo .infoDet {
+    float: left;
+}
+
+.tabContent .tabRecom .recomLeft .recomInfo img {
+    width: 180px;
+    height: 120px;
+}
+
+.tabContent .tabRecom .recomLeft .recomInfo .infoDet {
+    width: 300px;
+    height: 120px;
+    padding-left: 10px;
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+
+.tabContent .tabRecom .recomLeft .recomInfo .infoDet a {
+    font-size: 15px;
+    color: #000;
+    text-decoration: none;
+    display: block;
+}
+
+.tabContent .tabRecom .recomLeft .recomInfo .infoDet span {
+    font-size: 10px;
+    color: #777;
+}
+
+.tabContent .tabRecom .recomRight ul,
+.tabContent .tabRecom .recomRight ul li {
+    list-style: none;
+}
+
+.tabContent .tabRecom .recomRight ul li {
+    float: left;
+    width: 150px;
+    height: 20px;
+}
+
+.tabContent .tabRecom .recomRight ul li a {
+    text-overflow: ellipsis;
+}
+
+
+/*导航内部分*/
+
+.tabContent .tabNav .tabDiv {
+    width: 130px;
+    height: 60px;
+    box-sizing: border-box;
+    float: left;
+    margin-right: 15px;
+    margin-top: 15px;
+}
+
+.tabContent .tabNav .tabDiv i {
+    display: block;
+    float: left;
+    width: 16px;
+    height: 16px;
+    background: url(../img/9483.png) no-repeat;
+    background-size: 16px 16px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.tabContent .tabNav .tabDiv span {
+    line-height: 60px;
+    font-size: 15px;
+}
+
+.tabDivSelected {
+    border: 1px solid #ccc;
+}
+
+
+/*footer*/
+
+footer {
+    position: absolute;
+    width: 100%;
+    margin: 0 auto;
+    bottom: 23px;
+}
+
+footer p {
+    text-align: center;
+}
+
+footer p img {
+    width: 12px;
+    height: 12px;
+}
+
+
+/*输入框右侧 相机 图标*/
+
+.camera {
+    background-image: url(../img/camera0.png?__sprite);
+    position: absolute;
+    width: 20px;
+    height: 18px;
+    margin-top: 4px;
+    margin-left: -28px;
+    cursor: pointer;
+}
+
+.camera:hover {
+    background-image: url(../img/camera1.png?__sprite);
+}
+
+
+/*右上角  设置*/
+
+.setDiv,
+.setDiv:hover {
+    display: inline-block;
+}
+
+.setList {
+    display: none;
+    position: absolute;
+    list-style: none;
+    font-size: 13px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.setDiv:hover .setList {
+    display: block;
+    position: absolute;
+}
+
+.searchSet:hover,
+.advancedSearch:hover,
+.closeForecast:hover,
+.searchHistory:hover {
+    background-color: #3388FF;
+}
+
+
+/*右上角  更多产品*/
+
+.moreDivHoverty {
+    width: 89px;
+    height: 100%;
+    position: fixed;
+    background-color: #f9f9f9;
+    border-left: 1px solid #e7e7e7;
+    box-sizing: border-box;
+    margin-top: -15px;
+    padding-top: 15px;
+}
+
+.moreDiv,
+.moreDiv:hover {
+    display: inline-block;
+}
+
+.moreDiv a {
+    color: white;
+    background-color: #3388FF;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+.moreDiv .more {
+    text-align: left;
+}
+
+.moreDiv .more1,
+.moreDiv .more2,
+.moreDiv .more3,
+.moreDiv .more4,
+.moreDiv .more5,
+.moreDiv .more6 {
+    width: 66px;
+    height: 77px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #e7e7e7;
+    display: none;
+}
+
+.moreDiv .more1 .moreSpan1 {
+    width: 40px;
+    height: 36px;
+    display: block;
+    margin: 10px auto 5px;
+    background: url(../img/bdbri_icons_0a62ce1.png) no-repeat;
+    cursor: pointer;
+    background-position: -72px 0;
+}
+
+.moreDiv .more2 .moreSpan2 {
+    width: 36px;
+    height: 36px;
+    display: block;
+    margin: 10px auto 5px;
+    background: url(../img/bdbri_icons_0a62ce1.png) no-repeat;
+    cursor: pointer;
+    background-position: -112px 0;
+}
+
+.moreDiv .more3 .moreSpan3 {
+    width: 36px;
+    height: 36px;
+    display: block;
+    margin: 10px auto 5px;
+    background: url(../img/bdbri_icons_0a62ce1.png) no-repeat;
+    cursor: pointer;
+    background-position: -36px 0;
+}
+
+.moreDiv .more4 .moreSpan4 {
+    width: 36px;
+    height: 36px;
+    display: block;
+    margin: 10px auto 5px;
+    background: url(../img/bdbri_icons_0a62ce1.png) no-repeat;
+    cursor: pointer;
+    background-position: -148px 0;
+}
+
+.moreDiv .more5 .moreSpan5 {
+    width: 36px;
+    height: 36px;
+    display: block;
+    margin: 10px auto 5px;
+    background: url(../img/bdbri_icons_0a62ce1.png) no-repeat;
+    cursor: pointer;
+    background-position: -184px 0;
+}
+
+
+/*回到顶部div*/
+
+.goback {
+    width: 50px;
+    height: 50px;
+    background-color: #eee;
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+    display: none;
+}

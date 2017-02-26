@@ -1,0 +1,136 @@
+/*初始化*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*背景图*/
+
+body {
+    background-image: url(../img/beijing.gif);
+}
+
+
+/*圆角白色table背景*/
+
+.center {
+    position: relative;
+    background-color: white;
+    display: inline-block;
+    width: 710px;
+    height: 3000px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    left: 50%;
+    margin-left: -355px;
+    border-radius: 30px;
+    font-size: 13px;
+}
+
+header {
+    width: 650px;
+    height: 76px;
+    margin-left: 30px;
+}
+
+header a {
+    float: right;
+    margin-left: 15px;
+    margin-top: 60px;
+    color: #FF0099;
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+}
+
+table {
+    width: 650px;
+    height: 2800px;
+    margin-left: 30px;
+    border: 1px solid #cccccc;
+    border-collapse: collapse;
+}
+
+th {
+    border: 1px solid #cccccc;
+}
+
+td {
+    width: 10px;
+    border: 1px solid #cccccc;
+}
+
+
+/*基本资料 联系方式 家庭信息 样式设置*/
+
+td.infoType {
+    font-size: 14px;
+    color: #003399;
+    background-color: #eeeeee;
+}
+
+
+/*table第一列元素靠左 第一排文字居中*/
+
+td.fstTd {
+    text-align: center;
+}
+
+td.leftTd {
+    text-align: right;
+}
+
+td.rightTd{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+
+/*用来统一设置 表中 “红色” 字体*/
+
+span.redSpa {
+    color: red;
+}
+
+
+/*用来统一设置 表中 “蓝色” 字体*/
+
+span.blueSpa {
+    color: #0000ff
+}
+
+
+/*底部“提交”按钮*/
+
+.subBtn {
+    width: 100px;
+    height: 30px;
+    position: relative;
+    left: 50%;
+    margin-left: -50px;
+}
+
+
+/**/
+
+fieldset {
+    border-style: none;
+}
+
+/*复选框与文字居中对齐*/
+fieldset label {
+   vertical-align: middle;
+}
+
+fieldset input{
+	vertical-align: middle;
+}
+
+textarea {
+    width: 50%;
+    height:100px;
+}

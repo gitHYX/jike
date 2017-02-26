@@ -1,0 +1,133 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/*正常盒子*/
+.content{
+	width: 100px;
+	height: 100px;
+	background-color: red;
+}
+
+.normal{
+	border: 5px solid blue;
+	background-color: orange;
+	padding: 10px;
+	width: 100px;
+	height: 100px;
+	margin-top: 50px;
+	margin-left: 50px;
+}
+ /*怪异盒子*/
+.content1{
+	width: 100px;
+	height: 100px;
+	background-color: yellow;
+}
+.non-normal{
+	border: 5px solid blue;
+	background-color: green;
+	margin-left: 50px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	padding: 10px;
+	width: 130px;
+	height: 130px;
+	box-sizing: border-box;
+}
+
+/*盒子内垂直水平居中*/
+.box{
+	display: -webkit-box;
+	-webkit-box-pack:center;
+	-webkit-box-align:center;
+	width: 500px;
+	height: 200px;
+	background-color: orange;
+}
+
+/*弹性盒子 水平*/
+
+.first{
+	height: 100px; 
+	background-color: red;
+	-webkit-flex:1;
+
+}
+.second{
+	height: 100px; 
+	background-color: yellow;
+	-webkit-flex:2;
+}
+.third{
+	height: 200px; 
+	background-color: blue;
+	-webkit-flex:1;
+}
+
+.con{
+	display: -webkit-flex;
+	width: 600px;
+	background-color: green;
+}
+
+/*弹性盒子 垂直*/
+
+.fourth{
+	height: 100px; 
+	background-color: red;
+	-webkit-flex:1;
+
+}
+.fifth{
+	height: 100px; 
+	background-color: yellow;
+	-webkit-flex:2;
+}
+.sixth{
+	height: 200px; 
+	background-color: blue;
+	-webkit-flex:1;
+}
+
+.con1{
+	-webkit-flex-direction:column;
+	display: -webkit-flex;
+	width: 600px;
+	height: 500px;
+	background-color: green;
+}
+
+/*弹性盒子 排序*/
+.seventh{
+	height: 100px; 
+	background-color: red;
+	-webkit-flex:1;
+	-webkit-order:3;
+
+}
+.eighth{
+	height: 100px; 
+	background-color: yellow;
+	-webkit-flex:2;
+	-webkit-order:2;
+}
+.ninth{
+	height: 200px; 
+	background-color: blue;
+	-webkit-flex:1;
+	-webkit-order:1;
+}
+
+.con2{
+	display: -webkit-flex;
+	width: 600px;
+	background-color: green;
+}
+
+/*分栏*/
+.col{
+	-webkit-column-count:3;
+	-webkit-column-rule-style:dotted;
+}

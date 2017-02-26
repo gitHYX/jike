@@ -1,0 +1,430 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #fcfcfc;
+}
+
+/*导航栏部分*/
+
+header {
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    margin: 0 auto;
+}
+
+header .navDiv {
+    width: 1190px;
+    margin: 0 auto;
+    height: 60px;
+/*    background-color: orange;*/
+}
+
+header .navDiv .logoImg {
+    width: 190px;
+    height: 60px;
+}
+
+
+/*正文部分*/
+
+.content {
+    width: 1190px;
+    margin: 0 auto;
+    /*background-color: orange;*/
+    height: 1000px;
+}
+
+.content .searchDiv {
+	padding-top: 20px;
+    width: 100%;
+    height: 100px;
+/*    background-color: red;*/
+    text-align: center;
+}
+
+.content .searchDiv form {
+    display: inline-block;
+    margin: 0 auto;
+/*    background-color: purple;*/
+}
+
+.content .searchDiv .baiduLogo {
+    display: inline-block;
+    float: left;
+    width: 120px;
+    height: 42px;
+    background: url(../img/index_widthlg.png) -10px -212px no-repeat;
+    cursor: pointer;
+}
+
+.content .searchDiv .searchText {
+    display: inline-block;
+    float: left;
+    width: 448px;
+    height: 38px;
+    margin-left: 20px;
+}
+
+.content .searchDiv .baiduBtn {
+    width: 120px;
+    height: 42px;
+    float: left;
+}
+
+.content .otherSearch a{
+	font-size: 12px;
+	margin-left: 15px;
+    color: #000;
+    text-decoration: none;
+}
+
+.content .otherSearch .a1{
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url(../img/index_widthlg.png) -159px -260px no-repeat;
+}
+/*   首页  电视剧 最新电影 **************/
+.content #topMenuDiv{
+    width: 100%;
+    height: 40px;
+    margin: 0 auto;
+}
+.content #topMenuDiv ul{
+    width: 100%;
+    margin:0 auto;
+    list-style: none;
+}
+
+.content #topMenuDiv{
+    border-top: 2px solid #0aa770;
+}
+
+.content #topMenuDiv ul li{
+    height: 38px;
+    line-height: 38px;
+    width: 119px;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.content #topMenuDiv ul #fstLi{
+    background-color: #0aa770;
+}
+
+.content #topMenuDiv ul li a{
+    color: #000;
+    text-decoration: none;
+}
+
+.content #topMenuDiv ul a:hover{
+    color: #0aa770;
+}
+
+.content #topMenuDiv ul li .menuSplit{
+    display: block;
+    width: 1px;
+    height: 40px;
+    float: right;
+    top: 0;
+    right: 0;
+    background: url(../img/menus_split.png) center left no-repeat;
+}
+
+
+/*权威推荐  人民网  新华网*******/
+.content #secMenuDiv{
+    width: 100%;
+    height: 40px;
+    margin: 0 auto;
+    border: 1px solid #0aa770;
+    border-top-color: #eaeaea;
+    box-sizing: border-box;
+}
+.content #secMenuDiv ul{
+    background-color: #0aa770;
+    width: 100%;
+    margin:0 auto;
+    list-style: none;
+}
+
+.content #secMenuDiv ul li{
+    height: 38px;
+    line-height: 38px;
+    width: 90px;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.content #secMenuDiv ul li a{
+    color: #000;
+    text-decoration: none;
+}
+
+.content #secMenuDiv ul #fstA{
+    color: #0aa770;
+}
+
+/*各类网址分类部分  左右两侧*/
+.content .thirMenuDiv{
+    width: 100%;
+    margin: 0 auto;
+    height: 1000px;
+    box-sizing: border-box;
+}
+
+   /*左侧*/
+.content .thirMenuDiv .leftDiv{
+    display: inline-block;
+    width: 280px;
+    height: 500px;
+    /*background-color: yellow;*/
+}
+.content .thirMenuDiv .leftDiv .adDiv{
+    width: 278px;
+    height: 70px;
+    position: absolute;
+   /* margin-top: 10px;*/
+    border: 1px solid #cecece;
+}
+
+.content .thirMenuDiv .leftDiv .leftMenuDiv{
+    position: absolute;
+    margin-top: 80px;
+    width: 280px;
+    height: 163px;
+    border: 1px solid #cecece;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.content .thirMenuDiv .leftDiv .leftMenuDiv ul{
+    width: 100%;
+    list-style: none;
+    margin-top: 8px;
+    height: 150px;
+}
+
+.content .thirMenuDiv .leftDiv .leftMenuDiv ul li
+{
+    height: 30px;
+    line-height: 30px;
+    width: 138px;
+    float: left;
+    text-align: left;
+    cursor: pointer;
+    overflow: hidden;
+    color: #423e3e;
+}
+.content .thirMenuDiv .leftDiv .leftMenuDiv ul a{
+    text-decoration: none;
+    color: #423e3e;
+    font-size: 15px;
+}
+
+.content .thirMenuDiv .leftDiv .leftMenuDiv ul i{
+    display: inline-block;
+    width: 20px;
+    height: 18px;
+    margin-left: 18px;
+}
+
+.content .thirMenuDiv .leftDiv .leftMenuDiv ul .i0{
+    background: url(../img/index_menus_widthlg.png) -20px -81px no-repeat;
+}
+
+.content .thirMenuDiv .leftDiv .leftMenuDiv ul .i1{
+    background: url(../img/index_menus_widthlg.png) -19px -301px no-repeat;
+}
+
+.content .thirMenuDiv .leftDiv .leftMenuDiv ul .i2{
+    background: url(../img/index_menus_widthlg.png) -20px -160px no-repeat;
+}
+
+.content .thirMenuDiv .leftDiv .leftMenuDiv ul .i3{
+    background: url(../img/index_menus_widthlg.png) -20px -381px no-repeat;
+}
+
+.content .thirMenuDiv .leftDiv .leftMenuDiv ul .i4{
+    background: url(../img/index_menus_widthlg.png) -20px -100px no-repeat;
+}
+
+.content .thirMenuDiv .leftDiv .leftMenuDiv ul .i5{
+    background: url(../img/index_menus_widthlg.png) -20px -261px no-repeat;
+}
+
+.content .thirMenuDiv .leftDiv .leftMenuDiv ul .i6{
+    background: url(../img/index_menus_widthlg.png) -20px -21px no-repeat;
+}
+
+.content .thirMenuDiv .leftDiv .leftMenuDiv ul .i7{
+    background: url(../img/index_menus_widthlg.png) -20px -121px no-repeat;
+}
+
+.content .thirMenuDiv .leftDiv .leftMenuDiv ul .i8{
+    background: url(../img/index_menus_widthlg.png) -20px -281px no-repeat;
+}
+
+.content .thirMenuDiv .leftDiv .leftMenuDiv ul .i9{
+    background: url(../img/index_menus_widthlg.png) -20px -362px no-repeat;
+}
+
+
+
+    /*右侧*/
+.content .thirMenuDiv .rightDiv{
+    display: inline-block;
+    width: 900px;
+    box-sizing: border-box;
+}
+
+.content .thirMenuDiv .rightDiv #webDiv{
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid #0aa770;
+    margin-top: 10px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.content .thirMenuDiv .rightDiv #webDiv ul{
+    width: 100%;
+    height: 125px;
+    list-style: none;
+}
+
+.content .thirMenuDiv .rightDiv #webDiv ul li
+{
+    height: 35px;
+    line-height: 35px;
+    width: 130px;
+    float: left;
+    text-align: left;
+    cursor: pointer;
+    overflow: hidden;
+    color: #423e3e;
+    margin-left: 18px;
+}
+.content .thirMenuDiv .rightDiv #webDiv ul a{
+    text-decoration: none;
+    color: #423e3e;
+    font-size: 15px;
+}
+
+.content .thirMenuDiv .rightDiv #webDiv ul .a12,
+.content .thirMenuDiv .rightDiv #webDiv ul .a13,
+.content .thirMenuDiv .rightDiv #webDiv ul .a14,
+.content .thirMenuDiv .rightDiv #webDiv ul .a15,
+.content .thirMenuDiv .rightDiv #webDiv ul .a16,
+.content .thirMenuDiv .rightDiv #webDiv ul .a17{
+    color: #0aa770;
+}
+
+.content .thirMenuDiv .rightDiv #webDiv ul i{
+    display: inline-block;
+    width: 20px;
+    height: 18px;
+}
+
+.content .thirMenuDiv .rightDiv #webDiv ul i{
+    display: inline-block;
+    width: 20px;
+    height: 18px;
+    margin-left: 18px;
+}
+
+.content .thirMenuDiv .rightDiv #webDiv ul .i0{
+    background: url(../img/defaultIcon1229.png) 2px -198px no-repeat;
+}
+
+.content .thirMenuDiv .rightDiv #webDiv ul .i1{
+    background: url(../img/defaultIcon1229.png) 2px -278px no-repeat;
+}
+.content .thirMenuDiv .rightDiv #webDiv ul .i2{
+    background: url(../img/defaultIcon1229.png) 2px -318px no-repeat;
+}
+
+.content .thirMenuDiv .rightDiv #webDiv ul .i3{
+    background: url(../img/defaultIcon1229.png) 2px -38px no-repeat;
+}
+.content .thirMenuDiv .rightDiv #webDiv ul .i4{
+    background: url(../img/defaultIcon1229.png) 2px -157px no-repeat;
+}
+
+.content .thirMenuDiv .rightDiv #webDiv ul .i5{
+    background: url(../img/defaultIcon1229.png) 2px -398px no-repeat;
+}
+
+.content .thirMenuDiv .rightDiv #webDiv ul .i6{
+    background: url(../img/10138.2.png) no-repeat;
+}
+
+.content .thirMenuDiv .rightDiv #webDiv ul .i7{
+    background: url(../img/defaultIcon1229.png) 2px -238px no-repeat;
+}
+
+.content .thirMenuDiv .rightDiv #webDiv ul .i8{
+    background: url(../img/defaultIcon1229.png) 2px -358px no-repeat;
+}
+
+.content .thirMenuDiv .rightDiv #webDiv ul .i9{
+    background: url(../img/game0331.png) no-repeat;
+}
+
+.content .thirMenuDiv .rightDiv #webDiv ul .i10{
+    background: url(../img/defaultIcon1229.png) 2px 2px no-repeat;
+}
+.content .thirMenuDiv .rightDiv #webDiv ul .i11{
+    background: url(../img/1419388771.png) no-repeat;
+}
+.content .thirMenuDiv .rightDiv #webDiv ul .i12{
+    background: url(../img/21.1.png) no-repeat;
+}
+.content .thirMenuDiv .rightDiv #webDiv ul .i13{
+    background: url(../img/8022_1.png) no-repeat;
+}
+.content .thirMenuDiv .rightDiv #webDiv ul .i14{
+    background: url(../img/6282.png) no-repeat;
+}
+.content .thirMenuDiv .rightDiv #webDiv ul .i15{
+    background: url(../img/8500.8500.png) no-repeat;
+}
+.content .thirMenuDiv .rightDiv #webDiv ul .i16{
+    background: url(../img/defaultIcon1229.png) 2px -518px no-repeat;
+}
+.content .thirMenuDiv .rightDiv #webDiv ul .i17{
+    background: url(../img/8.411.png) no-repeat;
+}
+
+.content #secMenuDiv ul a:hover{
+    color: #ff5500;
+    text-decoration: underline;
+}
+
+.content #secMenuDiv ul .fstA:hover{
+    color: #0aa770;
+    text-decoration: none;
+}
+
+.content .thirMenuDiv .leftDiv .leftMenuDiv ul a:hover,
+.content .thirMenuDiv .rightDiv #webDiv ul a:hover{
+    color: #ff5500;
+    text-decoration: underline;
+}
+
+.content .thirMenuDiv .rightDiv #webDiv ul .a12:hover,
+.content .thirMenuDiv .rightDiv #webDiv ul .a13:hover,
+.content .thirMenuDiv .rightDiv #webDiv ul .a14:hover,
+.content .thirMenuDiv .rightDiv #webDiv ul .a15:hover,
+.content .thirMenuDiv .rightDiv #webDiv ul .a16:hover,
+.content .thirMenuDiv .rightDiv #webDiv ul .a17:hover{
+    color: #0aa770;
+    text-decoration: underline;
+}

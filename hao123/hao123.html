@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>hao123_上网从这里开始</title>
+    <link rel="stylesheet" type="text/css" href="css/hao123.css" />
+</head>
+
+<body>
+    <div class="container">
+    <!-- 导航栏以及换肤按钮 -->
+        <header>
+            <div class="navDiv">
+                <img class="logoImg" src="img/richanglogo168_24.png" />
+                <button onclick="ChangeSkin('red')">红色red</button>
+                <button onclick="ChangeSkin('yellow')">黄色yellow</button>
+                <button onclick="ChangeSkin('blue')">蓝色blue</button>
+                <button onclick="ChangeSkin('green')">绿色green</button>
+                <button onclick="ChangeSkin('purple')">紫色purple</button>
+            </div>
+        </header>
+        <div class="content">
+        <!-- 百度搜索块 -->
+            <div class="searchDiv">
+                <form action="">
+                    <span class="baiduLogo"></span>
+                    <input class="searchText" type="text" name="" />
+                    <input class="baiduBtn" type="button" value="百度一下" name="" />
+                </form>
+                <div class="otherSearch">
+                    <a class="a1" href=""></a>
+                    <a href="">深圳天气</a>
+                    <a href="">NBA</a>
+                    <a href="">刘谦五登春晚</a>
+                    <a href="">曹云金新恋情</a>
+                    <a href="">保剑锋否认出轨</a>
+                    <a href="">陈妍希产子</a>
+                    <a href="">斗鱼直播</a>
+                    <a href="">何洁离婚</a>
+                </div>
+            </div>
+            <!-- 首页  电视剧  最新电影   新闻头条  等等 -->
+            <div id="topMenuDiv">
+                <ul>
+                    <li id="fstLi"><a href=""><span>首页</span><span class="menuSplit"></span></a></li>
+                    <li><a href=""><span class="topMenuSpan">电视剧</span><span class="menuSplit"></span></a></li>
+                    <li><a href=""><span class="topMenuSpan">最新电影</span><span class="menuSplit"></span></a></li>
+                    <li><a href=""><span class="topMenuSpan">新闻头条</span><span class="menuSplit"></span></a></li>
+                    <li><a href=""><span class="topMenuSpan">八卦娱乐</span><span class="menuSplit"></span></a></li>
+                    <li><a href=""><span class="topMenuSpan">军事热点</span><span class="menuSplit"></span></a></li>
+                    <li><a href=""><span class="topMenuSpan">热门游戏</span><span class="menuSplit"></span></a></li>
+                    <li><a href=""><span class="topMenuSpan">小游戏</span><span class="menuSplit"></span></a></li>
+                    <li><a href=""><span class="topMenuSpan">今日特价</span><span class="menuSplit"></span></a></li>
+                    <li><a href=""><span class="topMenuSpan">特价旅游</span><span class="menuSplit"></span></a></li>
+                </ul>
+            </div>
+            <!-- 权威推荐  人民网 新华网  等等 -->
+            <div id="secMenuDiv">
+                <ul>
+                    <li class="fstLi"><a id="fstA" href="javascript:volid(0);"><span>权威推荐</span></a></li>
+                    <li><a href=""><span>人民网</span></a></li>
+                    <li><a href=""><span>新华网</span></a></li>
+                    <li><a href=""><span>央视网</span></a></li>
+                    <li><a href=""><span>国际在线</span></a></li>
+                    <li><a href=""><span>中国日报网</span></a></li>
+                    <li><a href=""><span>中国网</span></a></li>
+                    <li><a href=""><span>中国经济网</span></a></li>
+                    <li><a href=""><span>光明网</span></a></li>
+                    <li><a href=""><span>央广网</span></a></li>
+                    <li><a href=""><span>求是网</span></a></li>
+                    <li><a href=""><span>中国青年网</span></a></li>
+                    <li><a href=""><span>中国网信网</span></a></li>
+                </ul>
+            </div>
+            <div class="thirMenuDiv">
+                <div class="leftDiv">
+                    <div class="adDiv">
+                        <a href=""><img src="img/2a98d24005d4fb08b31f4299db3dae37.jpg"></a>
+                    </div>
+                    <div class="leftMenuDiv">
+                        <ul>
+                            <li><i class="i0"></i><a href="">电视剧</a> | <a href="">综艺</a></li>
+                            <li><i class="i1"></i><a href="">游戏</a> | <a href="">小游戏</a></li>
+                            <li><i class="i2"></i><a href="">电影</a> | <a href="">直播</a></li>
+                            <li><i class="i3"></i><a href="">动画</a> | <a href="">漫画</a></li>
+                            <li><i class="i4"></i><a href="">新闻</a> | <a href="">军事</a></li>
+                            <li><i class="i5"></i><a href="">旅游</a> | <a href="">音乐</a></li>
+                            <li><i class="i6"></i><a href="">彩票</a> | <a href="">竞猜</a></li>
+                            <li><i class="i7"></i><a href="">搞笑</a> | <a href="">小说</a></li>
+                            <li><i class="i8"></i><a href="">特价</a> | <a href="">手机</a></li>
+                            <li><i class="i9"></i><a href="">股票</a> | <a href="">理财</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="rightDiv">
+                    <div id="webDiv">
+                        <ul>
+                            <li><i class="i0"></i><a href="">百度贴吧</a></li>
+                            <li><i class="i1"></i><a href="">新浪微博</a></li>
+                            <li><i class="i2"></i><a href="">搜狐热点</a></li>
+                            <li><i class="i3"></i><a href="">腾讯</a></li>
+                            <li><i class="i4"></i><a href="">网易</a></li>
+                            <li><i class="i5"></i><a href="">优酷网</a></li>
+                            <li><i class="i6"></i><a href="">天猫</a></li>
+                            <li><i class="i7"></i><a href="">凤凰网</a></li>
+                            <li><i class="i8"></i><a href="">淘宝网</a></li>
+                            <li><i class="i9"></i><a href="">免费游戏</a></li>
+                            <li><i class="i10"></i><a href="">4399游戏</a></li>
+                            <li><i class="i11"></i><a href="">hao123影视</a></li>
+                            <li><i class="i12"></i><a class="webA" href="">京东商城</a></li>
+                            <li><i class="i13"></i><a class="webA" href="">苏宁易购</a></li>
+                            <li><i class="i14"></i><a class="webA" href="">今日特价</a></li>
+                            <li><i class="i15"></i><a class="webA" href="">国美在线</a></li>
+                            <li><i class="i16"></i><a class="webA" href="">汽车之家</a></li>
+                            <li><i class="i17"></i><a class="webA" href="">聚划算</a></li>
+                        </ul>
+                        <ul>
+                            <li><i class="i0"></i><a href="">百度贴吧</a></li>
+                            <li><i class="i1"></i><a href="">新浪微博</a></li>
+                            <li><i class="i2"></i><a href="">搜狐热点</a></li>
+                            <li><i class="i3"></i><a href="">腾讯</a></li>
+                            <li><i class="i4"></i><a href="">网易</a></li>
+                            <li><i class="i5"></i><a href="">优酷网</a></li>
+                            <li><i class="i6"></i><a href="">天猫</a></li>
+                            <li><i class="i7"></i><a href="">凤凰网</a></li>
+                            <li><i class="i8"></i><a href="">淘宝网</a></li>
+                            <li><i class="i9"></i><a href="">免费游戏</a></li>
+                            <li><i class="i10"></i><a href="">4399游戏</a></li>
+                            <li><i class="i11"></i><a href="">hao123影视</a></li>
+                            <li><i class="i12"></i><a class="webA" href="">京东商城</a></li>
+                            <li><i class="i13"></i><a class="webA" href="">苏宁易购</a></li>
+                            <li><i class="i14"></i><a class="webA" href="">今日特价</a></li>
+                            <li><i class="i15"></i><a class="webA" href="">国美在线</a></li>
+                            <li><i class="i16"></i><a class="webA" href="">汽车之家</a></li>
+                            <li><i class="i17"></i><a class="webA" href="">聚划算</a></li>
+                        </ul>
+                        <ul>
+                            <li><i class="i0"></i><a href="">百度贴吧</a></li>
+                            <li><i class="i1"></i><a href="">新浪微博</a></li>
+                            <li><i class="i2"></i><a href="">搜狐热点</a></li>
+                            <li><i class="i3"></i><a href="">腾讯</a></li>
+                            <li><i class="i4"></i><a href="">网易</a></li>
+                            <li><i class="i5"></i><a href="">优酷网</a></li>
+                            <li><i class="i6"></i><a href="">天猫</a></li>
+                            <li><i class="i7"></i><a href="">凤凰网</a></li>
+                            <li><i class="i8"></i><a href="">淘宝网</a></li>
+                            <li><i class="i9"></i><a href="">免费游戏</a></li>
+                            <li><i class="i10"></i><a href="">4399游戏</a></li>
+                            <li><i class="i11"></i><a href="">hao123影视</a></li>
+                            <li><i class="i12"></i><a class="webA" href="">京东商城</a></li>
+                            <li><i class="i13"></i><a class="webA" href="">苏宁易购</a></li>
+                            <li><i class="i14"></i><a class="webA" href="">今日特价</a></li>
+                            <li><i class="i15"></i><a class="webA" href="">国美在线</a></li>
+                            <li><i class="i16"></i><a class="webA" href="">汽车之家</a></li>
+                            <li><i class="i17"></i><a class="webA" href="">聚划算</a></li>
+                        </ul>
+                        <ul>
+                            <li><i class="i0"></i><a href="">百度贴吧</a></li>
+                            <li><i class="i1"></i><a href="">新浪微博</a></li>
+                            <li><i class="i2"></i><a href="">搜狐热点</a></li>
+                            <li><i class="i3"></i><a href="">腾讯</a></li>
+                            <li><i class="i4"></i><a href="">网易</a></li>
+                            <li><i class="i5"></i><a href="">优酷网</a></li>
+                            <li><i class="i6"></i><a href="">天猫</a></li>
+                            <li><i class="i7"></i><a href="">凤凰网</a></li>
+                            <li><i class="i8"></i><a href="">淘宝网</a></li>
+                            <li><i class="i9"></i><a href="">免费游戏</a></li>
+                            <li><i class="i10"></i><a href="">4399游戏</a></li>
+                            <li><i class="i11"></i><a href="">hao123影视</a></li>
+                            <li><i class="i12"></i><a class="webA" href="">京东商城</a></li>
+                            <li><i class="i13"></i><a class="webA" href="">苏宁易购</a></li>
+                            <li><i class="i14"></i><a class="webA" href="">今日特价</a></li>
+                            <li><i class="i15"></i><a class="webA" href="">国美在线</a></li>
+                            <li><i class="i16"></i><a class="webA" href="">汽车之家</a></li>
+                            <li><i class="i17"></i><a class="webA" href="">聚划算</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src = "js/hao123.js"></script>
+</body>
+
+</html>

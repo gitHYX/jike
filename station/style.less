@@ -1,0 +1,82 @@
+@boderColor: #000;
+@themeColor1: green;
+@themeColor2: #872C20;
+@fontSize: 15px;
+.station {
+    width: 500px;
+    height: 250px;
+    border: 5px solid @boderColor;
+    .busNum {
+        width: 33%;
+        height: 100px;
+        float: left;
+        background-color: @themeColor2;
+        text-align: center;
+        span {
+            color: #fff;
+            font-size: @fontSize*3;
+            line-height: 100px;
+        }
+    }
+    .startEndSta {
+        width: 67%;
+        height: 100px;
+        float: right;
+        text-align: center;
+        span {
+            line-height: 100px;
+            font-size: @fontSize*3;
+            color: @themeColor1;
+        }
+    }
+    .time {
+        width: 100%;
+        height: 30px;
+        text-align: center;
+        float: left;
+        span {
+            font-size: @fontSize;
+            color: #000;
+            line-height: 30px;
+        }
+    }
+    .staName {
+        width: 100%;
+        height: 70px;
+        span {
+            display: block;
+            float: left;
+            width: 10%;
+            height: 100%;
+            background-color: @themeColor1;
+            font-size: @fontSize;
+            text-align: center;
+        }
+    }
+    .arrow {
+        width: 100%;
+        height: 50px;
+        float: left;
+        .arrowBody {
+            position: relative;
+            width: 300px;
+            height: 6px;
+            background-color: #000;
+            top: 50%;
+            margin-top: -3px;
+            left: 50%;
+            margin-left: -150px;
+        }
+        .arrowHead {
+            left: 374px;
+            top: 17px;
+            border-left: 20px solid transparent;
+            border-top: 10px solid #000;
+            border-right: 30px solid transparent;
+            transform: rotate(20deg);
+            position: relative;
+            width: 0;
+            height: 0;
+        }
+    }
+}

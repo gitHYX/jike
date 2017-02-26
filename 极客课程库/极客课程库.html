@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>极客学院课程库</title>
+    <link rel="stylesheet" href="css/homePage.css" />
+    <script type="text/javascript" src="scripts/jquery.min.js"></script>
+    <script type="text/javascript" src="js/classlib.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <a href="http://www.jikexueyuan.com/" class="homeA">
+                    <img class="logoImg" src="img/logo.png">
+                </a>
+                <div class="choose">
+                    <div class="chooseDiv0">
+                        <a href="" class="homeA">首页</a>
+                    </div>
+                    <div class="chooseDiv1">
+                        <a href="" class="collegeA">职业学院<i class="arrow0"></i></a>
+                        <div class="collegeDiv">
+                            <span class="titleSpan">前端学院</span>
+                            <a href="http://www.jikexueyuan.com/zhiye/web" target="_blank" class="deltailA"><i class="webIcon"></i>Web 前端工程师</a>
+                            <span class="titleSpan">后端学院</span>
+                            <a href="http://www.jikexueyuan.com/zhiye/python" target="_blank" class="deltailA"><i class="pythonIcon"></i> Python Web工程师</a>
+                            <a href="http://www.jikexueyuan.com/zhiye/go" target="_blank" class="deltailA"><i class="goIcon"></i> Go语言工程师</a>
+                            <span class="titleSpan">移动学院</span>
+                            <a href="http://www.jikexueyuan.com/zhiye/ios" target="_blank" class="deltailA"><i class="iOSIcon"></i> iOS工程师</a>
+                        </div>
+                    </div>
+                    <div class="chooseDiv2">
+                        <a href="" class="subA">会员课程<i class="arrow1"></i></a>
+                        <div class="subDiv">
+                            <a href="http://www.jikexueyuan.com/course/" target="_blank" class="subDetail"><i class="subIcon0"></i>课程库<span>2500+</span></a>
+                            <a href="http://ke.jikexueyuan.com/zhiye/" target="_blank" class="subDetail"><i class="subIcon1"></i>职业路径图<span>9</span></a>
+                            <a href="http://www.jikexueyuan.com/path/" target="_blank" class="subDetail"><i class="subIcon2"></i>知识体系图<span>24</span></a>
+                            <a href="http://ke.jikexueyuan.com/xilie/" target="_blank" class="subDetail"><i class="subIcon3"></i>系列课程<span>110</span></a>
+                            <a href="http://www.jikexueyuan.com/tag/" target="_blank" class="subDetail"><i class="subIcon4"></i>课程标签<span>4000+</span></a>
+                            <a href="http://www.jikexueyuan.com/vip/" target="_blank" class="subDetail"><i class="subIcon5"></i>VIP会员购买<span>30/月 260/年</span></a>
+                        </div>
+                    </div>
+                    <div class="chooseDiv3">
+                        <a href="" class="communityA">极客社区<i class="arrow2"></i></a>
+                        <div class="subDiv">
+                            <a href="http://wenda.jikexueyuan.com/" target="_blank" class="subDetail"><i class="subIcon0"></i>技术问答<span>20000+</span></a>
+                            <a href="http://wiki.jikexueyuan.com/" target="_blank" class="subDetail"><i class="subIcon1"></i>WiKi<span>351</span></a>
+                            <a href="http://qun.jikexueyuan.com/" target="_blank" class="subDetail"><i class="subIcon2"></i>社群<span>7000+</span></a>
+                            <a href="http://download.jikexueyuan.com/" target="_blank" class="subDetail"><i class="subIcon3"></i>资源下载<span>3000</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="rightNav">
+                    <i class="hideSear"></i>
+                    <input type="text" placeholder="搜索课程,问答或WiKi" />
+                    <i class="hideClo"></i>
+                    <a class="hidea" href="#">Android</a>
+                    <a class="hidea" href="#">iOS</a>
+                    <a class="hidea" href="#">HTML5</a>
+                    <div class="userLoginDiv">
+                        <div class="userChoose">
+                            <a href="http://passport.jikexueyuan.com/sso/reg_phone" target="_blank" class="userReg">注册</a>|
+                            <a href="http://passport.jikexueyuan.com/sso/login" target="_blank" class="userLog">登录</a>
+                            <a href="http://passport.jikexueyuan.com/sso/login" target="_blank" class="userA"><i class="userIcon0"></i>学习中心</a>
+                            <a href="http://passport.jikexueyuan.com/sso/login" target="_blank" class="userA"><i class="userIcon1"></i>个人主页</a>
+                            <a href="http://passport.jikexueyuan.com/sso/login" target="_blank" class="userA"><i class="userIcon2"></i>消息通知</a>
+                            <a href="http://passport.jikexueyuan.com/sso/login" target="_blank" class="userA"><i class="userIcon3"></i>账号设置</a>
+                        </div>
+                    </div>
+                    <div class="appDiv">
+                        <div class="downPic"></div>
+                    </div>
+                    <div class="searchDiv"></div>
+                </div>
+            </nav>
+        </header>
+        <div id="pager">
+            <div id="leftMenu">
+                <div id="classlib">
+                    <div id="cl">
+                        <i></i>
+                        <span>课程库</span>
+                    </div>
+                    <div>
+                        <ul id="detaillib">
+                            <li><a href="#">移动开发</a></li>
+                            <li><a href="#">前端开发</a></li>
+                            <li><a href="#">后端开发</a></li>
+                            <li><a href="#">基础知识</a></li>
+                            <li><a href="#">云计算&大数据</a></li>
+                            <li><a href="#">智能硬件&物联网</a></li>
+                            <li><a href="#">数据库</a></li>
+                            <li><a href="#">认证考试</a></li>
+                            <li><a href="#">企业IT</a></li>
+                            <li><a href="#">设计&产品&测试</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul id="hidelib">
+                            <li><i class="hidei1"></i><a href="#">职业路径图</a><span>查看全部</span></li>
+                            <li><i class="hidei2"></i><a href="#">知识体系图</a><span>查看全部</span></li>
+                            <li><i class="hidei3"></i><a href="#">系列课程</a><span>查看全部</span></li>
+                            <li><i class="hidei4"></i><a href="#">课程标签</a><span>查看全部</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="libDetail1">
+                    <dl>
+                        <dt>应用开发</dt>
+                        <dd>
+                            <a href="#">安卓</a>
+                            <span>|</span>
+                            <a href="#">iOS</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>游戏开发</dt>
+                        <dd>
+                            <a href="#">Cocos</a>
+                            <span>|</span>
+                            <a href="#">Unity3D</a>
+                            <span>|</span>
+                            <a href="#">SpriteKit 2D</a>
+                            <span>|</span>
+                            <a href="#">Unreal</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>常用框架</dt>
+                        <dd>
+                            <a href="#">CordovaReact</a>
+                            <span>|</span>
+                            <a href="#">Native</a>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="libDetail1">
+                    <dl>
+                        <dt>前端基础</dt>
+                        <dd>
+                            <a href="#">HTML</a>
+                            <span>|</span>
+                            <a href="#">CSS</a>
+                            <span>|</span>
+                            <a href="#">JavaScript</a>
+                            <span>|</span>
+                            <a href="#">HTML5</a>
+                            <span>|</span>
+                            <a href="#">CSS3</a>
+                            <span>|</span>
+                            <a href="#">技术前瞻</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>前端进阶</dt>
+                        <dd>
+                            <a href="#">Typescript</a>
+                            <span>|</span>
+                            <a href="#">前端安全</a>
+                            <span>|</span>
+                            <a href="#">项目实战</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>前端框架</dt>
+                        <dd>
+                            <a href="#">jQuery</a>
+                            <span>|</span>
+                            <a href="#">jQuery UI</a>
+                            <span>|</span>
+                            <a href="#">jQuery Mobile</a>
+                            <span>|</span>
+                            <a href="#">Ext JS</a>
+                            <span>|</span>
+                            <a href="#">AngularJS</a>
+                            <span>|</span>
+                            <a href="#">ReactJS</a>
+                            <span>|</span>
+                            <a href="#">Bootstrap</a>
+                            <span>|</span>
+                            <a href="#">React Native</a>
+                            <span>|</span>
+                            <a href="#">Backbone</a>
+                            <span>|</span>
+                            <a href="#">Three.js</a>
+                            <span>|</span>
+                            <a href="#">MooTools</a>
+                            <span>|</span>
+                            <a href="#">Compass</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>HTML5游戏</dt>
+                        <dd>
+                            <a href="#">Canvas</a>
+                            <span>|</span>
+                            <a href="#">SVG</a>
+                            <span>|</span>
+                            <a href="#">WebGL</a>
+                            <span>|</span>
+                            <a href="#">Cocos2d-js</a>
+                            <span>|</span>
+                            <a href="#">CreateJS</a>
+                            <span>|</span>
+                            <a href="#">Flash</a>
+                            <span>|</span>
+                            <a href="#">Unreal</a>
+                            <span>|</span>
+                            <a href="#">Egret</a>
+                            <span>|</span>
+                            <a href="#">Phaser</a>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <div id="rightContent">
+                <div id="contentBar">
+                    <span>全部课程</span>
+                    <dl>
+                        <dt>最新</dt>
+                        <dd>
+                            <a href="#">最新</a>
+                            <a href="#">最热</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>课程类型</dt>
+                        <dd>
+                            <a href="#">VIP</a>
+                            <a href="#">免费</a>
+                            <a href="#">认证专享</a>
+                            <a href="#">全部</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>内容类型</dt>
+                        <dd>
+                            <a href="#">知识精讲</a>
+                            <a href="#">项目实战</a>
+                            <a href="#">全部</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>难度等级</dt>
+                        <dd>
+                            <a href="#">初级</a>
+                            <a href="#">中级</a>
+                            <a href="#">高级</a>
+                            <a href="#">全部</a>
+                        </dd>
+                    </dl>
+                    <div id="showMode1"><i></i></div>
+                    <div id="showMode2"><i></i></div>
+                </div>
+                <div id="lessonDiv">
+                    <ul id="lessonList">
+                        <li>
+                            <div class="lessonImg">
+                                <div class="transult"><i></i></div>
+                            </div>
+                            <div class="lessonInfo">
+                                <div class="info1">腾讯云产品-游戏云</div>
+                                <div class="info2">本课程主要介绍腾讯游戏云想着知识本课程主要介绍腾讯游戏云想着知识本课程主要介绍腾讯游戏云想着知识本课程主要介绍腾讯游戏云想着知识</div>
+                                <div class="info3">5课时 177分钟</div>
+                                <div class="info4">2689人学习</div>
+                                <div class="info5">中级</div>
+                                <div class="info6"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="lessonImg">
+                                <div class="transult"><i></i></div>
+                            </div>
+                            <div class="lessonInfo">
+                                <div class="info1">腾讯云产品-游戏云</div>
+                                <div class="info2">本课程主要介绍腾讯游戏云想着知识本课程主要介绍腾讯游戏云想着知识本课程主要介绍腾讯游戏云想着知识本课程主要介绍腾讯游戏云想着知识本课程主要介绍腾讯游戏云想着知识本课程主要介绍腾讯游戏云想着知识本课程</div>
+                                <div class="info3">5课时 177分钟</div>
+                                <div class="info4">2689人学习</div>
+                                <div class="info5">中级</div>
+                                <div class="info6"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="lessonImg">
+                                <div class="transult"><i></i></div>
+                            </div>
+                            <div class="lessonInfo">
+                                <div class="info1">腾讯云产品-游戏云</div>
+                                <div class="info2">本课程主要介绍腾讯游戏云想着知识本课程主要介绍腾讯游戏云想着知识本课程主要介绍腾讯游戏云想着知识本课程主要介绍腾讯游戏云想着知识</div>
+                                <div class="info3">5课时 177分钟</div>
+                                <div class="info4">2689人学习</div>
+                                <div class="info5">中级</div>
+                                <div class="info6"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="lessonImg">
+                                <div class="transult"><i></i></div>
+                            </div>
+                            <div class="lessonInfo">
+                                <div class="info1">腾讯云产品-游戏云</div>
+                                <div class="info2">本课程主要介绍腾讯游戏云想着知识本课程主要介绍腾讯游戏云想着知识本课程主要介绍腾讯游戏云想着知识本课程主要介绍腾讯游戏云想着知识</div>
+                                <div class="info3">5课时 177分钟</div>
+                                <div class="info4">2689人学习</div>
+                                <div class="info5">中级</div>
+                                <div class="info6"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="lessonImg">
+                                <div class="transult"><i></i></div>
+                            </div>
+                            <div class="lessonInfo">
+                                <div class="info1">腾讯云产品-游戏云</div>
+                                <div class="info2">本课程主要介绍腾讯游戏云想着知识本课程主要介绍腾讯游戏云想着知识本课程主要介绍腾讯游戏云想着知识本课程主要介绍腾讯游戏云想着知识</div>
+                                <div class="info3">5课时 177分钟</div>
+                                <div class="info4">2689人学习</div>
+                                <div class="info5">中级</div>
+                                <div class="info6"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="lessonImg">
+                                <div class="transult"><i></i></div>
+                            </div>
+                            <div class="lessonInfo">
+                                <div class="info1">腾讯云产品-游戏云</div>
+                                <div class="info2">本课程主要介绍腾讯游戏云想着知识本课程主要介绍腾讯游戏云想着知识本课程主要介绍腾讯游戏云想着知识本课程主要介绍腾讯游戏云想着知识</div>
+                                <div class="info3">5课时 177分钟</div>
+                                <div class="info4">2689人学习</div>
+                                <div class="info5">中级</div>
+                                <div class="info6"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="lessonImg">
+                                <div class="transult"><i></i></div>
+                            </div>
+                            <div class="lessonInfo">
+                                <div class="info1">腾讯云产品-游戏云</div>
+                                <div class="info2">本课程主要介绍腾讯游戏云想着知识本课程主要介绍腾讯游戏云想着知识本课程主要介绍腾讯游戏云想着知识本课程主要介绍腾讯游戏云想着知识</div>
+                                <div class="info3">5课时 177分钟</div>
+                                <div class="info4">2689人学习</div>
+                                <div class="info5">中级</div>
+                                <div class="info6"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="lessonImg">
+                                <div class="transult"><i></i></div>
+                            </div>
+                            <div class="lessonInfo">
+                                <div class="info1">腾讯云产品-游戏云</div>
+                                <div class="info2">本课程主要介绍腾讯游戏云想着知识本课程主要介绍腾讯游戏云想着知识本课程主要介绍腾讯游戏云想着知识本课程主要介绍腾讯游戏云想着知识</div>
+                                <div class="info3">5课时 177分钟</div>
+                                <div class="info4">2689人学习</div>
+                                <div class="info5">中级</div>
+                                <div class="info6"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="lessonImg">
+                                <div class="transult"><i></i></div>
+                            </div>
+                            <div class="lessonInfo">
+                                <div class="info1">腾讯云产品-游戏云</div>
+                                <div class="info2">本课程主要介绍腾讯游戏云想着知识本课程主要介绍腾讯游戏云想着知识本课程主要介绍腾讯游戏云想着知识本课程主要介绍腾讯游戏云想着知识</div>
+                                <div class="info3">5课时 177分钟</div>
+                                <div class="info4">2689人学习</div>
+                                <div class="info5">中级</div>
+                                <div class="info6"></div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="emDiv"></div>
+                </div>
+            </div>
+            <div class="emDiv"></div>
+        </div>
+        <footer>
+            <div class="footDiv">
+                <div class="footTop">
+                    <div class="footLogo">
+                        <img src="img/jk-logo-footer.png" />
+                        <p>极客学院，编程是一种信仰！</p>
+                    </div>
+                    <dl>
+                        <dt>职业学院</dt>
+                        <dd><a target="_blank" href="http://www.jikexueyuan.com/zhiye/web">Web前端工程师</a></dd>
+                        <dd><a target="_blank" href="http://www.jikexueyuan.com/zhiye/python">Python Web工程师</a></dd>
+                        <dd><a target="_blank" href="http://www.jikexueyuan.com/zhiye/go">Go语言工程师</a></dd>
+                        <dd><a target="_blank" href="http://www.jikexueyuan.com/zhiye/ios">iOS工程师</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>会员课程</dt>
+                        <dd><a target="_blank" href="http://www.jikexueyuan.com/course/">课程库</a></dd>
+                        <dd><a target="_blank" href="http://www.jikexueyuan.com/path/">知识体系图</a></dd>
+                        <dd><a target="_blank" href="http://ke.jikexueyuan.com/zhiye/">职业路径图</a></dd>
+                        <dd><a target="_blank" href="http://ke.jikexueyuan.com/xilie/">系列课程</a></dd>
+                        <dd><a target="_blank" href="http://www.jikexueyuan.com/tag/">课程标签</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>极客社区</dt>
+                        <dd><a target="_blank" href="http://wenda.jikexueyuan.com/">技术问答</a></dd>
+                        <dd><a target="_blank" href="http://wiki.jikexueyuan.com/">Wiki</a></dd>
+                        <dd><a target="_blank" href="http://download.jikexueyuan.com/">资源下载</a></dd>
+                        <dd><a target="_blank" href="http://qun.jikexueyuan.com/">社群</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>其他</dt>
+                        <dd><a target="_blank" href="http://help.jikexueyuan.com/">关于我们</a></dd>
+                        <dd><a target="_blank" href="http://help.jikexueyuan.com/join.html">加入我们</a></dd>
+                        <dd><a target="_blank" href="http://press.jikexueyuan.com/evangelist/apply.html">讲师合作</a></dd>
+                        <dd><a target="_blank" href="http://help.jikexueyuan.com/contact.html">联系我们</a></dd>
+                        <dd><a target="_blank" href="http://www.jikexueyuan.com/friendlink.html">友情链接</a></dd>
+                    </dl>
+                    <div class="telDiv">
+                        <p class="tel">服务热线:400-678-8266</p>
+                        <div class="downIos">
+                            <img src="img/app.png">iPhone
+                        </div>
+                        <div class="downAnd">
+                            <img src="img/app (1).png">Android
+                        </div>
+                    </div>
+                </div>
+                <div class="footBottom">
+                    <p>
+                        Copyright © 2013-2016 jikexueyuan.com All Rights Reserved. 京ICP备11018032号-8 京公网安备11010802020210
+                    </p>
+                    <img src="img/cert.png" />
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

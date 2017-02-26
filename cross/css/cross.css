@@ -1,0 +1,47 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+div {
+    box-shadow: 0px 0px 10px 5px rgba(96, 96, 96, 0.5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.divTop {
+    background-color: red;
+    margin: -150px 0 0 -50px;
+}
+
+.divLeft {
+    background-color: blue;
+    margin: -50px 0 0 -150px;
+}
+
+.divMiddle {
+    background-color: yellow;
+    margin: -50px 0 0 -50px;
+}
+
+.divRight {
+    background-color: green;
+    margin: -50px 0 0 50px;
+}
+
+.divBottom {
+    background-color: purple;
+    margin: 50px 0 0 -50px;
+}
+
+.divMiddle img {
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -32px 0 0 -32px;
+}

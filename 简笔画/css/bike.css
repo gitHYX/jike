@@ -1,0 +1,469 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*背景*/
+
+.background {
+    width: 600px;
+    height: 500px;
+    background-color: yellow;
+    position: absolute;
+    left: 50%;
+    margin-left: -300px;
+    overflow: hidden;
+}
+
+
+/*树以及平移动画*/
+
+.background .tree {
+    position: absolute;
+    width: 200px;
+    height: 400px;
+    -webkit-animation: all 5s linear;
+    -webkit-animation-name: animationTree;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation: all 5s linear;
+    -moz-animation-name: animationTree;
+    -moz-animation-iteration-count: infinite;
+    animation: all 5s linear;
+    animation-name: animationTree;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes animationTree {
+    0% {
+        -webkit-transform: translate(600px);
+    }
+    50% {
+        -webkit-transform: translate(200px);
+    }
+    100% {
+        -webkit-transform: translate(-200px);
+    }
+}
+
+@keyframes animationTree {
+    0% {
+        transform: translate(600px);
+    }
+    50% {
+        transform: translate(200px);
+    }
+    100% {
+        transform: translate(-200px);
+    }
+}
+
+@-moz-keyframes animationTree {
+    0% {
+        -moz-transform: translate(600px);
+    }
+    50% {
+        -moz-transform: translate(200px);
+    }
+    100% {
+        -moz-transform: translate(-200px);
+    }
+}
+
+
+/*绿叶部分*/
+
+.tree .leaf1 {
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    background-color: transparent;
+    border: 122px solid;
+    border-right: none;
+    border-top: none;
+    border-left-color: #3fe03f;
+    border-bottom-color: transparent;
+    transform: rotate(45deg);
+    left: 39px;
+    top: 176px;
+}
+
+.tree .leaf2 {
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    background-color: transparent;
+    border: 96px solid;
+    border-right: none;
+    border-top: none;
+    border-left-color: #3fe03f;
+    border-bottom-color: transparent;
+    transform: rotate(45deg);
+    left: 52px;
+    top: 121px;
+}
+
+.tree .leaf3 {
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    background-color: transparent;
+    border: 71px solid;
+    border-right: none;
+    border-top: none;
+    border-left-color: #3fe03f;
+    border-bottom-color: transparent;
+    transform: rotate(45deg);
+    left: 64px;
+    top: 74px;
+}
+
+
+/*树干*/
+
+.tree .bole {
+    position: absolute;
+    left: 85px;
+    top: 237px;
+    width: 32px;
+    height: 139px;
+    background-color: #8a4d24;
+}
+
+
+/*自行车*/
+
+#bike {
+    left: 50%;
+    margin-left: -250px;
+    margin-top: 100px;
+    width: 500px;
+    height: 400px;
+    position: absolute;
+}
+
+
+/*前轮*/
+
+.fontWheel {
+    margin-top: 200px;
+    margin-left: 310px;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 78px;
+    background-color: red;
+    border: 3px solid black;
+}
+
+.backWheel {
+    margin-top: 200px;
+    margin-left: 16px;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 78px;
+    background-color: red;
+    border: 3px solid black;
+}
+
+
+/*车轮辐条*/
+
+.wire div {
+    position: absolute;
+    margin-left: 75px;
+    width: 1px;
+    height: 150px;
+    background-color: black;
+}
+
+.wire .wire1 {
+    transform: rotate(22.5deg);
+}
+
+.wire .wire2 {
+    transform: rotate(45deg);
+}
+
+.wire .wire3 {
+    transform: rotate(67.5deg);
+}
+
+.wire .wire4 {
+    transform: rotate(90deg);
+}
+
+.wire .wire5 {
+    transform: rotate(113deg);
+}
+
+.wire .wire6 {
+    transform: rotate(135.5deg);
+}
+
+.wire .wire7 {
+    transform: rotate(158deg);
+}
+
+
+/*车轮轴*/
+
+.axle {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: black;
+    margin-left: 65px;
+    margin-top: 65px;
+}
+
+
+/*前后车轮动画*/
+
+.fontWheel,
+.backWheel {
+    -webkit-animation: all 3s linear;
+    -webkit-animation-name: animation;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation: all 3s linear;
+    -moz-animation-name: animation;
+    -moz-animation-iteration-count: infinite;
+    animation: all 3s linear;
+    animation-name: animation;
+    animation-iteration-count: infinite;
+}
+
+
+/*脚踏板部分*/
+
+.footBoard {
+    margin-left: 205px;
+    position: absolute;
+    margin-top: 248px;
+    width: 50px;
+    height: 50px;
+    border: 3px solid black;
+    border-radius: 28px;
+}
+
+
+/*踏板轴*/
+
+.footBoard .pedalRod {
+    width: 3px;
+    height: 70px;
+    background-color: black;
+    position: absolute;
+    left: 24px;
+    top: -10px;
+}
+
+
+/*两个踏板*/
+
+.footBoard .pedal1 {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    left: 13px;
+    top: -10px;
+}
+
+.footBoard .pedal2 {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    left: 13px;
+    top: 57px;
+}
+
+
+/*踏板动画*/
+
+.footBoard {
+    -webkit-animation: all 3s linear;
+    -webkit-animation-name: animation;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation: all 3s linear;
+    -moz-animation-name: animation;
+    -moz-animation-iteration-count: infinite;
+    animation: all 3s linear;
+    animation-name: animation;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes animation {
+    12.5% {
+        -webkit-transform: rotate(45deg);
+    }
+    25% {
+        -webkit-transform: rotate(90deg);
+    }
+    37.5% {
+        -webkit-transform: rotate(135deg);
+    }
+    50% {
+        -webkit-transform: rotate(180deg);
+    }
+    62.5% {
+        -webkit-transform: rotate(225deg);
+    }
+    75% {
+        -webkit-transform: rotate(270deg);
+    }
+    87.5% {
+        -webkit-transform: rotate(315deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes animation {
+    12.5% {
+        -moz-transform: rotate(45deg);
+    }
+    25% {
+        -moz-transform: rotate(90deg);
+    }
+    37.5% {
+        -moz-transform: rotate(135deg);
+    }
+    50% {
+        -moz-transform: rotate(180deg);
+    }
+    62.5% {
+        -moz-transform: rotate(225deg);
+    }
+    75% {
+        -moz-transform: rotate(270deg);
+    }
+    87.5% {
+        -moz-transform: rotate(315deg);
+    }
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@keyframes animation {
+    12.5% {
+        transform: rotate(45deg);
+    }
+    25% {
+        transform: rotate(90deg);
+    }
+    37.5% {
+        transform: rotate(135deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    62.5% {
+        transform: rotate(225deg);
+    }
+    75% {
+        transform: rotate(270deg);
+    }
+    87.5% {
+        transform: rotate(315deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/*车架部分*/
+.bikeFrame1 {
+    width: 140px;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    left: 93px;
+    top: 275px;
+}
+
+.bikeFrame2 {
+    width: 136px;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    left: 79px;
+    top: 232px;
+    transform: rotate(139deg);
+}
+
+.bikeFrame3 {
+    width: 136px;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    left: 140px;
+    top: 214px;
+    transform: rotate(68deg);
+}
+
+.bikeFrame4 {
+    width: 136px;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    left: 198px;
+    top: 174px;
+    transform: rotate(169deg);
+}
+
+.bikeFrame5 {
+    width: 153px;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    left: 208px;
+    top: 218px;
+    transform: rotate(131deg);
+}
+
+.bikeFrame6 {
+    width: 170px;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    left: 270px;
+    top: 204px;
+    transform: rotate(66deg);
+}
+
+/*座椅*/
+.seat {
+    width: 0px;
+    height: 0px;
+    background-color: transparent;
+    border: 31px solid black;
+    border-left-width: 55px;
+    border-left-color: transparent;
+    border-top: none;
+    border-right: none;
+    transform: rotate(29deg);
+    position: absolute;
+    left: 138px;
+    top: 114px;
+}
+
+/*把手*/
+.hand {
+    width: 31px;
+    height: 32px;
+    background-color: transparent;
+    border: 6px solid black;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-right: none;
+    transform: rotate(-39deg);
+    position: absolute;
+    left: 309px;
+    top: 90px;
+}

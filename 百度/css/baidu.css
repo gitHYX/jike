@@ -1,0 +1,420 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font: 13px arial;
+}
+
+.wrapper {
+    min-width: 320px;
+    min-height: 568px;
+    height: 100%;
+    position: relative;
+}
+
+
+/*pc端头部*/
+
+.pcHeader {
+    overflow: hidden;
+}
+
+.pcHeader nav {
+    width: 470px;
+    float: right;
+    margin-top: 15px;
+    float: right \0;
+}
+
+.pcHeader nav a {
+    margin-left: 15px;
+    color: black;
+    cursor: pointer;
+}
+
+.pcHeader nav a:hover {
+    color: #0000CC;
+}
+
+
+/*移动端头部*/
+
+.mHeader nav .weather {
+    width: 100%;
+    height: 40px;
+}
+
+.mHeader nav .weatherIcon {
+    margin-left: 10px;
+    display: inline-block;
+}
+
+.mHeader nav .weatherNum {
+    color: #999;
+    font-size: 29px;
+    width: 50px;
+    height: 40px;
+    display: inline-block;
+}
+
+.mHeader nav .weatherStatue {
+    color: #999;
+    font-size: 13px;
+    width: 50px;
+    height: 40px;
+    display: inline-block;
+}
+
+.mHeader nav .login {
+    width: 27px;
+    height: 27px;
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    margin-top: 6px;
+    margin-right: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .pcHeader {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .mHeader {
+        display: none;
+    }
+}
+
+
+/*主体部分*/
+
+.content {
+    text-align: center;
+    margin-top: 100px;
+}
+
+@media only screen and (max-width: 768px) {
+    .content {
+        margin-top: 10px;
+    }
+}
+
+.content input {
+    width: 500px;
+    height: 22px;
+    outline: 0;
+    text-indent: 8px;
+    border: 1px solid #CCCCCC;
+}
+
+@media only screen and (max-width: 768px) {
+    .content input {
+        width: 60%;
+        height: 45px;
+    }
+}
+
+.content input:hover {
+    border-color: #999999;
+}
+
+.content input:focus {
+    border-color: #3388FF;
+}
+
+.content button {
+    margin-left: -4px;
+    width: 100px;
+    height: 26px;
+    background-color: #317EF3;
+    border: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    .content button {
+        width: 25%;
+        height: 45px;
+    }
+}
+
+.content button:hover {
+    background-color: #4499FF;
+}
+
+.content .pcBaidu {
+    width: 270px;
+    height: 129px;
+}
+
+.content .mBaidu {
+    width: 181px;
+    height: 57px;
+}
+
+@media only screen and (max-width: 768px) {
+    .content .pcBaidu {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .content .mBaidu {
+        display: none;
+    }
+}
+
+/*关注  新闻  小说 视频 糯米 地图*/
+.content .memu{
+    width: 100%;
+    height: 90px;
+}
+
+@media only screen and (min-width: 768px) {
+    .content .memu {
+        display: none;
+    }
+}
+
+.content .memu a{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    text-decoration:none;
+}
+
+.content .memu a div{
+    width: 22px;
+    height: 22px;
+    margin: 0 auto auto auto;
+    background:url(../img/pic.png) no-repeat;
+    background-size: 22px auto;
+}
+.content .memu a p{
+    font-size: 12px;
+    color: #999;
+}
+
+/*关注*/
+.content .memu .attention{
+    position: absolute;
+    left: 8.3%;
+    margin-left: -25px;
+    margin-top: 15px;
+}
+
+.content .memu .attention div{
+    background-position: 0 -264px;
+}
+
+/*新闻*/
+.content .memu .news{
+    position: absolute;
+    left: 25%;
+    margin-left: -25px;
+    margin-top: 15px;
+}
+
+.content .memu .news div{
+    background-position: 0 -396px;
+}
+
+/*小说*/
+.content .memu .novel{
+    position: absolute;
+    left: 41.6%;
+    margin-left: -25px;
+    margin-top: 15px;
+}
+.content .memu .novel div{
+    background-position: 0 -330px;
+}
+
+/*视频*/
+.content .memu .video{
+    position: absolute;
+    left: 58.3%;
+    margin-left: -25px;
+    margin-top: 15px;
+}
+.content .memu .video div{
+    background-position: 0 -462px;
+}
+
+/*糯米*/
+.content .memu .sticky{
+    position: absolute;
+    left: 75%;
+    margin-left: -25px;
+    margin-top: 15px;
+}
+.content .memu .sticky div{
+    background-position: 0 -418px;
+}
+
+/*地图*/
+.content .memu .map{
+    position: absolute;
+    left: 91.6%;
+    margin-left: -25px;
+    margin-top: 15px;
+}
+.content .memu .map div{
+    background-position: 0 -308px;
+}
+
+/*部分新闻*/
+@media only screen and (min-width: 768px){
+    .content .otherNews{
+        display: none;
+    }
+}
+
+.content .otherNews .fstNews{
+    width: 100%;
+    min-height: 120px;
+    max-height: 300px;
+    text-align:left;
+}
+
+.content .otherNews .fstNews .fstNewsPic img{
+    width: 30%;
+    height: 64px;
+}
+.content .otherNews .fstNews .fstNewsPic .fstImg{
+    margin-left: 5%;
+}
+
+.content .otherNews .fstNews h2{
+    font-weight: normal;
+    color: #333;
+    font-size: 18px;
+    line-height: 26px;
+    margin-left: 5%;
+}
+
+.content .otherNews .fstNews .fstSpan{
+    margin-left: 5%;
+}
+
+/*分割线*/
+.content .otherNews .hrDiv{
+    width: 90%;
+    height: 1px;
+    background-color: #e6dada;
+    margin-left: 5%;
+}
+
+
+
+/*footer*/
+
+footer {
+    position: absolute;
+    width: 100%;
+    margin: 0 auto;
+    bottom: 23px;
+}
+
+footer p {
+    text-align: center;
+}
+
+footer p img {
+    width: 12px;
+    height: 12px;
+}
+
+@media only screen and (max-width: 768px){
+    footer{
+        display: none;
+    }
+}
+
+/*输入框右侧 相机 图标*/
+
+.camera {
+    background-image: url(../img/camera0.png);
+    position: absolute;
+    width: 20px;
+    height: 18px;
+    margin-top: 4px;
+    margin-left: -28px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    .camera {
+        margin-top: 12px;
+    }
+}
+
+.camera:hover {
+    background-image: url(../img/camera1.png);
+}
+
+
+/*右上角  设置*/
+
+.setDiv,
+.setDiv:hover {
+    display: inline-block;
+}
+
+.setList {
+    display: none;
+    position: absolute;
+    list-style: none;
+    font-size: 13px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.setDiv:hover .setList {
+    display: block;
+    position: absolute;
+}
+
+.searchSet:hover,
+.advancedSearch:hover,
+.closeForecast:hover,
+.searchHistory:hover {
+    background-color: #3388FF;
+}
+
+
+/*右上角  更多产品*/
+
+.moreDiv,
+.moreDiv:hover {
+    display: inline-block;
+}
+
+.moreDiv a {
+    color: white;
+    background-color: #3388FF;
+}

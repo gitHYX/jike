@@ -1,0 +1,29 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+.container{
+	min-width: 800px;
+	height: 100%;
+}
+
+h2{
+	width: 200px;
+	height: 50px;
+	margin: auto;
+	text-align: center;
+} 
+
+.subject{
+	width: 800px;
+	height: 100%;
+	background-color: #ffd746;
+	margin: auto;
+}
+
+.queation{
+	margin: 15px;
+	box-shadow: 5px 5px 13px 0px #659a11;
+	background-color: #8cc138;
+}

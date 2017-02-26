@@ -1,0 +1,1170 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h2 {
+    font-size: 18px;
+    color: #555;
+    height: 18px;
+    line-height: 18px;
+    margin-bottom: 22px;
+    font-weight: 400px;
+}
+
+.container {
+    background-color: #f5f5f5;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*导航栏*/
+
+header {
+    width: 100%;
+    height: 60px;
+    background-color: #ffffff;
+}
+
+header nav {
+    width: 1000px;
+    height: 60px;
+    margin: 0 auto 0 auto;
+}
+
+header nav .homeA .logoImg {
+    margin-top: 10px;
+    width: 109px;
+    height: 40px;
+    float: left;
+}
+
+header nav .choose {
+    display: block;
+    width: 385px;
+    height: 60px;
+    float: left;
+    position: absolute;
+    margin-left: 150px;
+}
+
+header nav .choose [class^="chooseDiv"] {
+    display: inline-block;
+    height: 60px;
+}
+
+header nav .choose .chooseDiv0 .homeA,
+header nav .choose .chooseDiv1 .collegeA,
+header nav .choose .chooseDiv2 .subA,
+header nav .choose .chooseDiv3 .communityA {
+    width: 90px;
+    height: 20px;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center;
+    color: #000000;
+    margin-top: 20px;
+}
+
+header nav .choose .chooseDiv0 .homeA {
+    color: #35b558;
+}
+
+
+/*中间部分*/
+
+.pager {
+    width: 1000px;
+    /*height: 2250px;*/
+    /*        background-color: red;*/
+    margin: 0 auto 0 auto;
+}
+
+
+/*隐藏的div 职业学院*/
+
+header nav .choose .chooseDiv1 .collegeDiv {
+    position: absolute;
+    width: 300px;
+    display: block;
+    margin-top: 20px;
+    border: 1px solid #e1e2e1;
+    background-color: #ffffff;
+    display: none;
+    z-index: 99999;
+    /*新知识点 ：将div置于屏幕最上层*/
+    transition-property: opacity;
+    transition-duration: 5s;
+}
+
+header nav .choose .chooseDiv1:hover .collegeDiv {
+    display: inline-block;
+}
+
+header nav .choose .chooseDiv1 .titleSpan {
+    width: 300px;
+    height: 30px;
+    display: block;
+    line-height: 30px;
+    color: #666;
+    font-size: 9px;
+    background-color: #f8f8f8;
+    text-indent: 8px;
+}
+
+header nav .choose .chooseDiv1 .deltailA {
+    width: 300px;
+    height: 35px;
+    display: block;
+    line-height: 35px;
+    color: #333;
+    text-decoration: none;
+    text-indent: 8px;
+    font-size: 10px;
+}
+
+header nav .choose .chooseDiv1 .deltailA:hover {
+    color: #35b558;
+}
+
+
+/*web python go  小图标*/
+
+header nav .choose .chooseDiv1 .deltailA .webIcon {
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    background: url(../img/allicon.png) no-repeat;
+    background-position: -15px -27px;
+    background-size: 64px 64px;
+    margin-right: 10px;
+}
+
+header nav .choose .chooseDiv1 .deltailA .pythonIcon {
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    background: url(../img/allicon3.png) no-repeat;
+    background-position: -2px -2px;
+    background-size: 16px 148px;
+    margin-right: 10px;
+}
+
+header nav .choose .chooseDiv1 .deltailA .goIcon {
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    background: url(../img/allicon3.png) no-repeat;
+    background-position: -2px -38px;
+    background-size: 16px 148px;
+    margin-right: 10px;
+}
+
+header nav .choose .chooseDiv1 .deltailA .iOSIcon {
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    background: url(../img/allicon3.png) no-repeat;
+    background-position: -2px -82px;
+    background-size: 16px 148px;
+    margin-right: 10px;
+}
+
+
+/*隐藏的div 会员课程*/
+
+header nav .choose .chooseDiv2 .subDiv {
+    position: absolute;
+    width: 300px;
+    display: block;
+    margin-top: 20px;
+    border: 1px solid #e1e2e1;
+    background-color: #ffffff;
+    display: none;
+    z-index: 99999;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+header nav .choose .chooseDiv2:hover .subDiv {
+    display: inline-block;
+}
+
+header nav .choose .chooseDiv2 .subDiv .subDetail {
+    display: inline-block;
+    width: 300px;
+    height: 40px;
+    line-height: 40px;
+    color: #666;
+    text-decoration: none;
+    font-size: 10px;
+    text-indent: 8px;
+}
+
+header nav .choose .chooseDiv2 .subDiv .subDetail:hover {
+    background-color: #f8f8f8;
+    color: #35b558;
+}
+
+header nav .choose .chooseDiv2 .subDiv .subDetail span {
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    color: #bbb;
+    font-size: 10px;
+    float: right;
+    margin-right: 10px;
+}
+
+
+/*课程小图标*/
+
+header nav .choose .chooseDiv2 .subDiv .subIcon0 {
+    background: url(../img/allicon.png) 0 0 no-repeat;
+    background-size: 64px 64px;
+    background-position: 0 -13px;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+header nav .choose .chooseDiv2 .subDiv .subIcon1 {
+    background: url(../img/allicon.png) 0 0 no-repeat;
+    background-size: 64px 64px;
+    background-position: -45px 0;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+header nav .choose .chooseDiv2 .subDiv .subIcon2 {
+    background: url(../img/allicon.png) 0 0 no-repeat;
+    background-size: 64px 64px;
+    background-position: -30px -13px;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+header nav .choose .chooseDiv2 .subDiv .subIcon3 {
+    background: url(../img/xlkc2.png) 0 0 no-repeat;
+    background-size: 12px 12px;
+    background-position: 0 0;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+header nav .choose .chooseDiv2 .subDiv .subIcon4 {
+    background: url(../img/allicon.png) 0 0 no-repeat;
+    background-size: 64px 64px;
+    background-position: -15px -13px;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+header nav .choose .chooseDiv2 .subDiv .subIcon5 {
+    background: url(../img/allicon.png) 0 0 no-repeat;
+    background-size: 64px 64px;
+    background-position: -16px 0;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+
+/*隐藏的div 极客社区*/
+
+header nav .choose .chooseDiv3 .subDiv {
+    position: absolute;
+    width: 300px;
+    display: block;
+    margin-top: 20px;
+    border: 1px solid #e1e2e1;
+    background-color: #ffffff;
+    display: none;
+    z-index: 99999;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+header nav .choose .chooseDiv3:hover .subDiv {
+    display: inline-block;
+}
+
+header nav .choose .chooseDiv3 .subDiv .subDetail {
+    display: inline-block;
+    width: 300px;
+    height: 40px;
+    line-height: 40px;
+    color: #666;
+    text-decoration: none;
+    font-size: 10px;
+    text-indent: 8px;
+}
+
+header nav .choose .chooseDiv3 .subDiv .subDetail:hover {
+    background-color: #f8f8f8;
+    color: #35b558;
+}
+
+header nav .choose .chooseDiv3 .subDiv .subDetail span {
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    color: #bbb;
+    font-size: 10px;
+    float: right;
+    margin-right: 10px;
+}
+
+
+/*社区小图标*/
+
+header nav .choose .chooseDiv3 .subDiv .subIcon0 {
+    background: url(../img/allicon.png) 0 0 no-repeat;
+    background-size: 64px 64px;
+    background-position: 0 -27px;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+header nav .choose .chooseDiv3 .subDiv .subIcon1 {
+    background: url(../img/allicon.png) 0 0 no-repeat;
+    background-size: 64px 64px;
+    background-position: -29px -27px;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+header nav .choose .chooseDiv3 .subDiv .subIcon2 {
+    background: url(../img/allicon.png) 0 0 no-repeat;
+    background-size: 64px 64px;
+    background-position: 0 2px;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+header nav .choose .chooseDiv3 .subDiv .subIcon3 {
+    background: url(../img/xlkc2.png) 0 0 no-repeat;
+    background-size: 64px 64px;
+    background-position: -30px 0;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+
+/*箭头*/
+
+header nav .choose [class^="arrow"] {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-left: 5px;
+    border-left: 1px solid #000;
+    border-top: 1px solid #000;
+    box-sizing: border-box;
+    transform: rotate(45deg);
+}
+
+header nav .choose .chooseDiv1:hover .arrow0,
+header nav .choose .chooseDiv2:hover .arrow1,
+header nav .choose .chooseDiv3:hover .arrow2 {
+    -webkit-transform: rotate(360deg);
+    -webkit-animation: arrowRot 1s linear;
+    -ms-transform: rotate(360deg);
+    -ms-animation: arrowRot 1s linear;
+    -moz-transform: rotate(360deg);
+    -moz-animation: arrowRot 1s linear;
+    -o-transform: rotate(360deg);
+    -o-animation: arrowRot 1s linear;
+    transform: rotate(360deg);
+    animation: arrowRot 1s linear;
+    border-color: #35b558;
+    transform: rotate(45deg);
+}
+
+@-webkit-keyframes arrowRot {
+    0% {
+        -webkit-transform: rotate(45deg);
+    }
+    100% {
+        -webkit-transform: rotate(405deg);
+    }
+}
+
+@-webkit-keyframes arrowRot {
+    0% {
+        -moz-transform: rotate(45deg);
+    }
+    100% {
+        -moz-transform: rotate(405deg);
+    }
+}
+
+@-ms-keyframes arrowRot {
+    0% {
+        -ms-transform: rotate(45deg);
+    }
+    100% {
+        -ms-transform: rotate(405deg);
+    }
+}
+
+@-o-keyframes arrowRot {
+    0% {
+        -o-transform: rotate(45deg);
+    }
+    100% {
+        -o-transform: rotate(405deg);
+    }
+}
+
+@keyframes arrowRot {
+    0% {
+        transform: rotate(45deg);
+    }
+    100% {
+        transform: rotate(405deg);
+    }
+}
+
+header nav .choose .chooseDiv1:hover a,
+header nav .choose .chooseDiv2:hover a,
+header nav .choose .chooseDiv3:hover a {
+    color: #35b558;
+}
+
+
+/*导航栏右侧部分  搜索  app  用户图标*/
+
+header nav .rightNav {
+    display: inline-block;
+    float: right;
+    width: 200px;
+    height: 60px;
+}
+
+header nav .rightNav div {
+    display: inline-block;
+    float: right;
+    width: 17px;
+    height: 60px;
+    margin-left: 30px;
+    margin-right: 10px;
+}
+
+header nav .rightNav .userLoginDiv {
+    background: url(../img/login-icon.png) no-repeat center;
+    background-size: 17px;
+}
+
+header nav .rightNav .appDiv {
+    background: url(../img/app-icon.png) no-repeat center;
+    background-size: 17px;
+}
+
+header nav .rightNav .searchDiv {
+    background: url(../img/search-icon.png) no-repeat center;
+    background-size: 17px;
+}
+
+header nav .rightNav .hideSear {
+    width: 17px;
+    height: 17px;
+    float: left;
+    margin-top: 22px;
+    background: url(../img/search-icon.png) no-repeat center;
+    background-size: 17px;
+    display: none;
+}
+
+header nav .rightNav input {
+    width: 300px;
+    border: none;
+    height: 30px;
+    margin-top: 15px;
+    text-indent: 8px;
+    display: none;
+}
+
+header nav .rightNav .hideClo {
+    width: 15px;
+    height: 15px;
+    display: none;
+    float: right;
+    margin-top: 24px;
+    margin-right: 10px;
+    background: url(../img/close-icon.png) no-repeat center;
+    background-size: 15px;
+}
+
+header nav .rightNav .hidea {
+    height: 20px;
+    line-height: 20px;
+    display: none;
+    float: right;
+    margin-top: 22px;
+    text-decoration: none;
+    font-size: 13px;
+    color: #bbb;
+    margin-right: 10px;
+    background-color: #f1f1f1;
+}
+
+
+/*二维码*/
+
+header nav .rightNav .appDiv .downPic {
+    width: 147px;
+    height: 196px;
+    position: absolute;
+    margin-top: 60px;
+    margin-left: -64px;
+    z-index: 99999;
+    background: url(../img/heade-rwm.png) no-repeat;
+    background-size: 147px 196px;
+    display: none;
+}
+
+header nav .rightNav .appDiv:hover .downPic {
+    display: block;
+}
+
+
+/*用户信息部分*/
+
+header nav .rightNav .userLoginDiv .userChoose {
+    width: 147px;
+    height: 200px;
+    position: absolute;
+    margin-top: 60px;
+    margin-left: -120px;
+    z-index: 99999;
+    background-color: #fff;
+    display: none;
+}
+
+header nav .rightNav .userLoginDiv:hover .userChoose {
+    display: block;
+}
+
+header nav .rightNav .userLoginDiv .userChoose .userReg,
+header nav .rightNav .userLoginDiv .userChoose .userLog {
+    display: inline-block;
+    width: 68px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 10px;
+    color: #666;
+    text-decoration: none;
+    text-align: center;
+}
+
+header nav .rightNav .userLoginDiv .userChoose .userA {
+    display: block;
+    width: 147px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 10px;
+    color: #666;
+    text-decoration: none;
+    text-indent: 8px;
+}
+
+header nav .rightNav .userLoginDiv .userChoose .userIcon0 {
+    background: url(../img/allicon2.png) no-repeat;
+    background-size: 64px 64px;
+    background-position: -16px -15px;
+    width: 12px;
+    height: 12px;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+header nav .rightNav .userLoginDiv .userChoose .userIcon1 {
+    background: url(../img/allicon2.png) no-repeat;
+    background-size: 64px 64px;
+    background-position: -45px -1px;
+    width: 12px;
+    height: 12px;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+header nav .rightNav .userLoginDiv .userChoose .userIcon2 {
+    background: url(../img/allicon2.png) no-repeat;
+    background-size: 64px 64px;
+    background-position: -16px -30px;
+    width: 12px;
+    height: 12px;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+header nav .rightNav .userLoginDiv .userChoose .userIcon3 {
+    background: url(../img/allicon2.png) no-repeat;
+    background-size: 64px 64px;
+    background-position: -30px -1px;
+    width: 12px;
+    height: 12px;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+header nav .rightNav .userLoginDiv .userChoose a:hover {
+    background-color: #f8f8f8;
+    color: #35b558;
+}
+
+
+/*page中间部分*/
+
+#pager {
+    width: 1000px;
+    /*    height: 100%;*/
+    margin: 0 auto;
+    /*    background-color: red;*/
+    padding-top: 20px;
+}
+
+#pager #leftMenu {
+    /*    height: 500px;*/
+    /*   background-color: yellow;*/
+    float: left;
+    position: absolute;
+    z-index: 100;
+}
+
+#pager #rightContent {
+    width: 776px;
+    /*    height: 1000px;*/
+    /*    background-color: green;*/
+    float: right;
+}
+
+#pager .emDiv {
+    clear: both;
+}
+
+#pager #leftMenu #classlib {
+    width: 208px;
+    box-sizing: border-box;
+    float: left;
+}
+
+#pager #leftMenu #classlib #cl {
+    height: 45px;
+    background-color: #fff;
+    border: 1px solid #35b558;
+    border-bottom: none;
+}
+
+#pager #leftMenu #classlib i {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background: url(../img/icon-course-curr_0743c98.png) no-repeat;
+    background-size: 15px 15px;
+    margin-top: 17px;
+    margin-left: 14px;
+}
+
+
+/*课程库*/
+
+#pager #leftMenu #classlib #detaillib {
+    border-bottom: 1px solid #35b558;
+}
+
+#pager #leftMenu #classlib #detaillib,
+#pager #leftMenu #classlib #detaillib li {
+    list-style: none;
+}
+
+#pager #leftMenu #classlib #detaillib li {
+    height: 37px;
+    background-color: #fff;
+    border-top: 1px solid #f5f5f5;
+    border-left: 1px solid #35b558;
+    border-right: 1px solid #35b558;
+}
+
+#pager #leftMenu #classlib #detaillib li a {
+    text-decoration: none;
+    font-size: 13px;
+    margin-left: 30px;
+    color: #666666;
+    line-height: 37px;
+}
+
+
+/*课程库下方部分*/
+
+#pager #leftMenu #classlib #hidelib,
+#pager #leftMenu #classlib #hidelib li {
+    list-style: none;
+}
+
+#pager #leftMenu #classlib #hidelib li {
+    height: 37px;
+    background-color: #fff;
+}
+
+#pager #leftMenu #classlib #hidelib li a {
+    text-decoration: none;
+    font-size: 13px;
+    margin-left: 5px;
+    color: #666666;
+    line-height: 37px;
+}
+
+#pager #leftMenu #classlib #hidelib li .hidei1 {
+    background: url(../img/icon-zylj_6ee6dac.png) no-repeat left center;
+    background-size: 15px 14px;
+}
+
+#pager #leftMenu #classlib #hidelib li .hidei2 {
+    background: url(../img/icon-zstx_a1ae096.png) no-repeat left center;
+    background-size: 15px 12.5px;
+}
+
+#pager #leftMenu #classlib #hidelib li .hidei3 {
+    background: url(../img/icon-xlkc_2e47588.png) no-repeat left center;
+    background-size: 14px 14px;
+}
+
+#pager #leftMenu #classlib #hidelib li .hidei4 {
+    background: url(../img/icon-kcbq_65534c2.png) no-repeat left center;
+    background-size: 15px 13px;
+}
+
+#pager #leftMenu #classlib #hidelib li i {
+    width: 15px;
+    height: 15px;
+    float: left;
+    margin-top: 12px;
+}
+
+#pager #leftMenu #classlib #hidelib li span {
+    float: right;
+    font-size: 9px;
+    color: #ccc;
+    line-height: 37px;
+    margin-right: 10px;
+    display: none;
+}
+
+
+/*鼠标滑过时显示详细的课程信息*/
+
+#pager #leftMenu .libDetail1 {
+    width: 400px;
+    height: 427px;
+    float: left;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-left: none;
+    box-sizing: border-box;
+    display: none;
+}
+
+#pager #leftMenu .libDetail1 dl {
+    height: auto;
+    padding: 10px 20px 0 20px;
+    margin-bottom: 30px;
+    display: block;
+}
+
+#pager #leftMenu .libDetail1 dl dt,
+#pager #leftMenu .libDetail1 dl dd {
+    font-size: 13px;
+    color: #666;
+    display: block;
+}
+
+#pager #leftMenu .libDetail1 dl dt {
+    border-bottom: 1px solid #eee;
+}
+
+#pager #leftMenu .libDetail1 dl dd a {
+    text-decoration: none;
+    font-size: 13px;
+    color: #666;
+    padding: 5px;
+}
+
+.libDetail1ShowStyle {
+    display: block !important;
+}
+
+
+/*右侧内容导航部分*/
+
+#pager #rightContent #contentBar {
+    width: 744px;
+    height: 40px;
+    background-color: #fff;
+    margin: 0 auto;
+    position: absolute;
+    z-index: 50;
+}
+
+#pager #rightContent #contentBar span,
+#pager #rightContent #contentBar dl,
+#pager #rightContent #contentBar dl dt {
+    text-align: center;
+    background-color: #fff;
+    width: 100px;
+    line-height: 40px;
+    color: #777;
+    font-size: 14px;
+    float: left;
+    display: block;
+}
+
+#pager #rightContent #contentBar dl {
+    box-sizing: border-box;
+}
+
+#pager #rightContent #contentBar dl dd {
+    display: none;
+}
+
+#pager #rightContent #contentBar dl dd a {
+    display: block;
+    text-decoration: none;
+    color: #777;
+    font-size: 14px;
+}
+
+#pager #rightContent #contentBar #showMode1,
+#pager #rightContent #contentBar #showMode2 {
+    width: 40px;
+    height: 40px;
+    float: right;
+}
+
+
+/*显示模式切换按钮*/
+
+#pager #rightContent #contentBar #showMode1 i {
+    width: 15px;
+    height: 15px;
+    display: block;
+    background: url(../img/icon-list_6d9f87f.png) no-repeat;
+    background-size: 16px 12px;
+    margin-top: 12px;
+    margin-left: 12px;
+}
+
+#pager #rightContent #contentBar #showMode2 i {
+    width: 15px;
+    height: 15px;
+    display: block;
+    background: url(../img/icon-kuai_3c1a8cf.png) no-repeat;
+    background-size: 16px 12px;
+    margin-top: 12px;
+    margin-left: 12px;
+}
+
+
+/*右侧部分课程展示列表*/
+
+#pager #rightContent #lessonDiv {
+    width: 100%;
+    margin-top: 40px;
+    padding-top: 10px;
+}
+
+#pager #rightContent #lessonDiv #lessonList {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+#pager #rightContent #lessonDiv ul,
+#pager #rightContent #lessonDiv ul li {
+    list-style: none;
+}
+
+#pager #rightContent #lessonDiv ul li {
+    width: 30%;
+    margin-right: 3%;
+    margin-bottom: 27px;
+    float: left;
+    height: 223px;
+}
+
+#pager #rightContent #lessonDiv ul .lessonImg {
+    height: 135px;
+    background: url(../img/584e070d8c2cb.jpeg) no-repeat;
+    background-size: 100% 135px;
+}
+
+#pager #rightContent #lessonDiv ul .lessonImg .transult {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+#pager #rightContent #lessonDiv ul .lessonImg .transult i {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../img/player_icon_5c67475.png);
+    background-size: 50px 50px;
+    float: left;
+    position: relative;
+    left: 50%;
+    margin-left: -25px;
+    top: 50%;
+    margin-top: -25px;
+}
+
+#pager #rightContent #lessonDiv ul .lessonInfo {
+    height: 88px;
+    background-color: #fff;
+    padding: 5px;
+    position: relative;
+}
+
+#pager #rightContent #lessonDiv ul .lessonInfo [class^='info'] {
+    font-size: 13px;
+    color: #777;
+}
+
+#pager #rightContent #lessonDiv ul .lessonInfo .info1 {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+}
+
+#pager #rightContent #lessonDiv ul .lessonInfo .info2 {
+    width: 100%;
+    height: auto;
+    display: none;
+}
+
+#pager #rightContent #lessonDiv ul .lessonInfo .info3,
+#pager #rightContent #lessonDiv ul .lessonInfo .info5 {
+    width: 100px;
+    height: 20px;
+    position: absolute;
+    bottom: 0px;
+}
+
+#pager #rightContent #lessonDiv ul .lessonInfo .info3 {
+    bottom: 20px;
+}
+
+#pager #rightContent #lessonDiv ul .lessonInfo .info4 {
+    width: 100px;
+    height: 20px;
+    position: absolute;
+    bottom: 20px;
+    right: 5px;
+    text-align: right;
+}
+
+#pager #rightContent #lessonDiv ul .lessonInfo .info6 {
+    width: 15px;
+    height: 15px;
+    background: url(../img/advance.png) no-repeat;
+    background-size: 15px 15px;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+
+
+/*列表样式*/
+
+#pager #rightContent #lessonDiv ul .listSty {
+    width: 100%;
+    margin-bottom: 27px;
+    height: 135px;
+}
+
+#pager #rightContent #lessonDiv ul .listSty .lessonImg {
+    width: 232.8px;
+    height: 135px;
+    float: left;
+}
+
+#pager #rightContent #lessonDiv ul .listSty .lessonInfo {
+    width: 511px;
+    height: 135px !important;
+    float: left;
+    box-sizing: border-box;
+}
+
+#pager #rightContent #lessonDiv ul .listSty .info2 {
+    width: 100%;
+    height: auto;
+    display: block !important;
+}
+
+
+/*底部footer*/
+
+footer {
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    border-top: 1px solid #e1e2e1;
+}
+
+footer .footDiv {
+    width: 1000px;
+    height: auto;
+    margin: 0 auto 0 auto;
+}
+
+footer .footDiv .footTop {
+    width: 1000px;
+    height: 217px;
+}
+
+footer .footDiv .footTop .footLogo {
+    position: relative;
+    float: left;
+    left: 0;
+    top: 25px;
+    display: inline-block;
+    width: 160px;
+}
+
+footer .footDiv .footTop .footLogo img {
+    width: 109px;
+    height: 40px;
+    display: block;
+}
+
+footer .footDiv .footTop .footLogo p {
+    font-size: 12px;
+    color: #999;
+    margin-top: 20px;
+}
+
+footer .footDiv .footTop dl {
+    width: 135px;
+    color: #808080;
+    float: left;
+    position: relative;
+    top: 25px;
+    left: 52px;
+}
+
+footer .footDiv .footTop dl dt {
+    font-size: 14px;
+    line-height: 30px;
+}
+
+footer .footDiv .footTop dl dd {
+    font-size: 12px;
+    line-height: 30px;
+}
+
+footer .footDiv .footTop dl dd a {
+    color: #999999;
+    text-decoration: none;
+}
+
+footer .footDiv .footTop dl dd a:hover {
+    color: #35b558;
+}
+
+footer .footDiv .footTop .telDiv {
+    width: 175px;
+    height: 119px;
+    float: right;
+    position: relative;
+    top: 25px;
+}
+
+footer .footDiv .footTop .telDiv .tel {
+    color: #808080;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+footer .footDiv .footTop .telDiv div {
+    position: relative;
+    display: inline-block;
+    width: 133px;
+    height: 30px;
+    border: 1px solid #eeeeee;
+    margin-bottom: 10px;
+    line-height: 30px;
+    color: #808080;
+    font-size: 13px;
+    padding-left: 40px;
+    cursor: pointer;
+}
+
+footer .footDiv .footTop .telDiv div img {
+    display: inline-block;
+    width: 115px;
+    height: 153px;
+    position: absolute;
+    top: -157px;
+    left: 12px;
+    z-index: 2;
+    display: none;
+    display: none;
+}
+
+footer .footDiv .footTop .telDiv div:hover img {
+    display: block;
+}
+
+footer .footDiv .footTop .telDiv .downIos {
+    background: url(../img/icon-down-ios.png) no-repeat;
+    background-size: 30px 30px;
+}
+
+footer .footDiv .footTop .telDiv .downAnd {
+    background: url(../img/icon-down-and.png) no-repeat;
+    background-size: 30px 30px;
+}
+
+footer .footDiv .footBottom {
+    width: 1000px;
+    height: 83px;
+    border-top: 1px solid #eff5ef;
+}
+
+footer .footDiv .footBottom p {
+    text-align: center;
+    font-size: 12px;
+    line-height: 30px;
+    color: #999999;
+}
+
+footer .footDiv .footBottom img {
+    width: 60px;
+    height: 22px;
+    position: absolute;
+    left: 50%;
+    margin-left: -30px;
+}
